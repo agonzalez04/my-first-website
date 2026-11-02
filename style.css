@@ -6,17 +6,17 @@ h1 {
 body {
     background-color: #dceaf5;
     color: #2f0864;
-    font-family: Arial, sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 16px;
 }
 h2 {
     color: #2f0864;
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 20px;
 }
 h3 {
     color: #2f0864;
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 18px;
 }
 h1, h2 {
@@ -28,13 +28,16 @@ h1, h2 {
 }
 .content-box {
     border: 3px solid #086060;
-    padding: 10px;
-    margin: 10px;
+    padding: 16px;
+    margin: 16px;
 }
 nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
     list-style-type: none;
-    padding: 10px;
-    margin: 10px;
+    padding: 16px;
+    margin: 16px;
     border: 1px solid #078ebf;
 }
 nav a {
@@ -53,4 +56,39 @@ footer {
     padding: 15px;
     margin: 10px;
     border: 3px solid #0b72a5;
+}
+@media (max-width: 768px) {
+}.content-box {
+    border: 3px solid #086060;
+    padding: 16px;
+    margin: 8px;
+}
+nav ul {
+    flex-wrap: wrap;
+}   
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+    .content-box {
+        padding: 8px;
+        margin: 8px;
+    }  
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+*{
+    box-sizing: border-box;
 }
